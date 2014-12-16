@@ -939,7 +939,7 @@ var TextCheck = function() {
         if (mode == 1)
         {
             S = "";
-            O = characterMain + characterEnd;
+            O = characterMain;
             P = colorStart + characterMain + colorEnd + characterEnd;
             E = "";
         }
@@ -947,13 +947,13 @@ var TextCheck = function() {
         {
             S = "";
             O = colorStart + characterMain + colorEnd + characterEnd;
-            P = characterMain + characterEnd;
+            P = characterMain;
             E = "";
         }
         else if (mode == 3)
         {
             S = quoteStart;
-            O = characterMain + characterEnd;
+            O = characterMain;
             P = colorStart + characterMain + colorEnd + characterEnd;
             E = quoteEnd;
         }
@@ -961,7 +961,7 @@ var TextCheck = function() {
         {
             S = quoteStart;
             O = colorStart + characterMain + colorEnd + characterEnd;
-            P = characterMain + characterEnd;
+            P = characterMain;
             E = quoteEnd;
         }
         else
