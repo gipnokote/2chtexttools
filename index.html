@@ -1,33 +1,52 @@
-<html>
-	<head>
-		<title>2ch.hk text tools</title>
+﻿<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>2ch.hk Text Tools</title>
 		<meta charset="utf-8">
 		<meta name="description" content="С помощью 2ch.hk text tools можно генерировать код для надписей псевдографикой на имиджбордах">
-		<link href='makaba.css' rel='stylesheet'>
+		<link href="makaba.css" rel="stylesheet">
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<script src="jquery.min.js"></script>
 		<script src="2chtexttools.js"></script>
 	</head>
 	<body>
-		<h1>2ch.hk text tools</h1>
-		<p><b>текст:</b><br>
-		<input type="text" name="in" id="in" size="40">
-		<br><br>
-		<label><input type="radio" name="width" value="1" checked> узкий</label> <label><input type="radio" name="width" value="2"> широкий</label>
-		<br>
-		<label><input type="radio" name="color" value="1" checked> черн+оранж</label> <label><input type="radio" name="color" value="2"> оранж+черн</label> <label><input type="radio" name="color" value="3"> зел+оранж</label> <label><input type="radio" name="color" value="4"> оранж+зел</label>
-		<br>
-		<label><input type="radio" name="transparency" value="1" checked> █</label> <label><input type="radio" name="transparency" value="2"> ▓</label> <label><input type="radio" name="transparency" value="3"> ▒</label> <label><input type="radio" name="transparency" value="4"> ░</label>
-		<br><br>
-		<input type="button" style="width:120px;height:92px;background:url(nik.jpg) no-repeat" onclick="generate();return false;">
-		<br><br>
-		<p><b>preview:</b>
-		<form id="posts-form">
+<table border="1" cellpadding="1" cellspacing="1" style="width: 100%;">
+	<tbody>
+		<tr>
+			<td style="width: 30%;">
+			<h1>2ch.hk Text Tools</h1>
+			<strong><span style="font-size:16px;">Текст:</span></strong><br>
+			<input type="text" name="in" id="in" size="40">
+			<br><br>
+			<strong><span style="font-size:16px;">Размер букв:</span></strong>
+			<br>
+			<label><input type="radio" name="width" value="1" checked="">Узкий</label><br>
+			<label><input type="radio" name="width" value="2">Широкий</label><br>
+			<br>
+			<strong><span style="font-size:16px;">Цвета:</span></strong>
+			<br>
+			<label><input type="radio" name="color" value="1" checked="">Черный фон и оранжевый текст</label><br>
+			<label><input type="radio" name="color" value="2">Оранжевый текст и черный фон</label><br>
+			<label><input type="radio" name="color" value="3">Зелёный фон и оранжевый текст</label><br>
+			<label><input type="radio" name="color" value="4">Оранжевый фон и зелёный текст</label><br>
+			<br>
+			<strong><span style="font-size:16px;">Прозрачность:</span></strong>
+			<br>
+			<label><input type="radio" name="transparency" value="1" checked="">█</label> <label><input type="radio" name="transparency" value="2">▓</label> <label><input type="radio" name="transparency" value="3">▒</label> <label><input type="radio" name="transparency" value="4"> ░</label>
+			<br><br>
+			<input type="button" style="width:120px;height:92px;background:url(nik.jpg) no-repeat" onclick="generate();return false;">
+			<br><br>
+			</td>
+			<td style="width: 70%;">
+			<strong><span style="font-size:16px;">Preview:</span></strong>
+			<form id="posts-form">
 			<blockquote id="preview" class="post-message"></blockquote>
-		</form>
-		<br>
-		<p><b>код:</b><br>
-		<textarea name="out" id="out" style="width:100%" rows="17"></textarea>
+			</form>
+			<br>
+			<strong><span style="font-size:16px;">Код:</span></strong><br>
+			<p><textarea name="out" id="out" style="width:100%" rows="17"></textarea></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
 		<footer class="footer">
 			<section class="board-info">
 				С помощью <strong>2ch.hk text tools</strong> можно генерировать код для надписей псевдографикой на имиджбордах.<br><br>
@@ -35,5 +54,4 @@
 			</section>
 		</footer>
 		<script src="init.js"></script>
-	</body>
-</html>
+</body></html>
